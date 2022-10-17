@@ -7,7 +7,7 @@ protocol UserDataDelegate {
 class ViewController: UIViewController {
 
     //MARK: Properties
-    //var userDataDelegate: UserDataDelegate!
+    var userDataDelegate: UserDataDelegate!
     var userDict = [String: Any]()
     var cdvCommand: CDVInvokedUrlCommand!
 
@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var textfieldFirstName: UITextField!
     @IBOutlet weak var textfieldLastName: UITextField!
     @IBOutlet weak var buttonSubmit: UIButton!
-    //@IBOutlet weak var buttonBack: UIButton!
+    @IBOutlet weak var buttonBack: UIButton!
     //MARK: Button actions
     //@IBAction func buttonBackClicked(_ sender: Any) {
     //    userDict["firstName"] = nil
