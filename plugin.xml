@@ -13,5 +13,8 @@
             </feature>
         </config-file>
         <source-file src="src/ios/CordovaStoryboard.swift" />
+        <source-file src="src/ios/ViewController.swift" />
+        <resource-file src="src/ios/Main.storyboard"/>
+        <source-file src="src/ios/Extensions.swift" />
     </platform>
 </plugin>
