@@ -12,7 +12,7 @@
         var pluginResult: CDVPluginResult? = nil
         let echo = command?.arguments[0] as? String
         if let echoString = echo{
-            pluginResult = CDVPluginResult(status: CDVCommandStatus_OK, messageAs: "\(echoString)!! from India")
+            pluginResult = CDVPluginResult(status: CDVCommandStatus_OK, messageAs: "\(echoString)!! from NYC")
         } else {
             pluginResult = CDVPluginResult(status: CDVCommandStatus_ERROR)
         }
@@ -23,7 +23,7 @@
     @objc(getUserData:) func getUserData(_ command: CDVInvokedUrlCommand) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let userDataController = storyboard.instantiateViewController(withIdentifier: "controllerId") as! ViewController
-        userDataController.userDataDelegate = self
+        //userDataController.userDataDelegate = self
         userDataController.cdvCommand = command
         viewController.addChildController(userDataController)
     }
