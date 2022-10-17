@@ -1,4 +1,4 @@
-@objc(DemoPlugin) class DemoPlugin : CDVPlugin{
+@objc(CordovaStoryboard) class CordovaStoryboard : CDVPlugin{
 
     // MARK: Properties
     var pluginResult = CDVPluginResult(status: CDVCommandStatus_ERROR)
